@@ -1,9 +1,9 @@
 // src/app/api/scrape_thekgolf_basic/route.js
 
 import { scrapeTheKgolf } from '../../../lib/scrapers/thekgolf.js';
-import { resetScraper } from '../../../lib/scraperController.js';
+//import { resetScraper } from '../../../lib/scraperController.js';
 
-export async function GET(request) {
+export async function GET() {
     // SSE 헤더 설정
     const headers = {
         'Content-Type': 'text/event-stream',

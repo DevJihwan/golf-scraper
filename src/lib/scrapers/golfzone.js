@@ -138,7 +138,7 @@ function extractDistrict(address) {
 // 대기 함수
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-export async function scrapeGolfzone(stopSignal = () => false, logInfo, logWarn, logError) {
+export async function scrapeGolfzone(logInfo, logWarn, logError) {
     logInfo('=== Golfzone 스크래핑 시작 ===');
 
     // 지역 리스트 추출 및 지역 수

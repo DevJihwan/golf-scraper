@@ -28,7 +28,6 @@ const scrapers: Scraper[] = [
   { id: 'scrape_thekgolf_basic', name: 'TheKgolf Basic' }, // TheKgolf
   { id: 'scrape_citeezen', name: 'Citeezen' },
   { id: 'scrape_citeezen_detail', name: 'Citeezen Detail' }
-  // ... 다른 스크래퍼 추가
 ];
 
 export default function Home() {

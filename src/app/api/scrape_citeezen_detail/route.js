@@ -1,7 +1,7 @@
 // src/app/api/scrape_citeezen_detail/route.js
 import { scrapeCiteezenDetails } from '../../../lib/scrapers/citeezon_details.js';
 
-export async function GET(request) {
+export async function GET() {
     // SSE 헤더 설정
     const headers = {
         'Content-Type': 'text/event-stream',

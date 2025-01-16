@@ -1,9 +1,9 @@
 // src/app/api/scrape_sggolf_basic/route.js
 
 import { scrapeSggolfBasic } from '../../../lib/scrapers/sggolf_basic.js';
-import { resetScraper } from '../../../lib/scraperController.js';
+//import { resetScraper } from '../../../lib/scraperController.js';
 
-export async function GET(request) {
+export async function GET() {
     // SSE 헤더 설정
     const headers = {
         'Content-Type': 'text/event-stream',

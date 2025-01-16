@@ -2,7 +2,7 @@
 
 import { scrapeFriendgolfDetails } from '../../../lib/scrapers/friendgolf_details.js';
 
-export async function GET(request) {
+export async function GET() {
     // SSE 헤더 설정
     const headers = {
         'Content-Type': 'text/event-stream',
