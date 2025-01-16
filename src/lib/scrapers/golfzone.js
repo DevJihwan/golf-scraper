@@ -126,7 +126,7 @@ function correctAddress(address) {
 function extractDistrict(address) {
   if (!address) return '';
 
-  for (const [district, province] of Object.entries(districtToProvinceMap)) {
+  for (const [district] of Object.entries(districtToProvinceMap)) {
     if (address.includes(district)) {
       return district;
     }
@@ -143,7 +143,7 @@ export async function scrapeGolfzone(stopSignal = () => false, logInfo, logWarn,
 
     // 지역 리스트 추출 및 지역 수
     const regionsList = regions.map(region => region.province);
-    const regionsCount = regionsList.length;
+    //const regionsCount = regionsList.length;
 
     // 진행 상태 읽기
     let progress = await readProgress('golfzone', { lastProcessedRegionIndex: 0, regionsProgress: {} });
@@ -204,7 +204,7 @@ export async function scrapeGolfzone(stopSignal = () => false, logInfo, logWarn,
         logInfo('팝업을 닫았습니다.');
         await delay(DELAY_BETWEEN_REQUESTS);
       } catch (err) {
-        logWarn('팝업이 나타나지 않았거나 이미 닫혔습니다.');
+        logWarn('팝업이 나타나지 않았거나 이미 닫혔습니다.'+err.message);
       }
 
       // 검색어 초기화

@@ -30,8 +30,8 @@ export async function scrapeFriendgolf(logInfo, logWarn, logError) {
     // 설정
     const BASE_URL = 'https://www.friendsscreen.kr/main/shop';
     const OUTPUT_FILE = path.join(process.cwd(), 'data', 'stores', 'friendgolf_shops.json');
-    const DELAY_BETWEEN_REQUESTS = 1000; // 요청 사이의 대기 시간 (밀리초)
-    const MAX_PAGE = 100; // 최대 페이지 수 (필요에 따라 조정)
+    //const DELAY_BETWEEN_REQUESTS = 1000; // 요청 사이의 대기 시간 (밀리초)
+    //const MAX_PAGE = 100; // 최대 페이지 수 (필요에 따라 조정)
 
     // 대한민국의 특별시, 광역시, 도 및 시군구 목록
     const regions = [

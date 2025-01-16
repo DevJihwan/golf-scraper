@@ -5,9 +5,9 @@ import fs from 'fs-extra';
 import path from 'path';
 import os from 'os';
 import pLimit from 'p-limit';
-import { readProgress, saveProgress } from '../../utils/progressManager.js';
+//import { readProgress, saveProgress } from '../../utils/progressManager.js';
 import { getScraperStatus, setScraperStatus, resetScraper } from '../scraperController.js';
-import { Mutex } from 'async-mutex';
+//import { Mutex } from 'async-mutex';
 
 /**
  * 커스텀 에러 클래스 정의
@@ -31,7 +31,7 @@ export async function scrapePublicgolfDetail(logInfo, logWarn, logError) {
     setScraperStatus(scraperId, 'running');
 
     // 설정
-    const BASE_URL = 'https://publicscreengolf.com/store';
+    //const BASE_URL = 'https://publicscreengolf.com/store';
     const INPUT_FILE = path.join(process.cwd(), 'data', 'stores', 'publicgcreengolf_stores.json'); // 기존에 수집한 JSON 파일명
     const OUTPUT_FILE = path.join(process.cwd(), 'data', 'stores', 'publicgcreengolf_stores_updated.json'); // 업데이트된 데이터를 저장할 파일명
     const PROGRESS_FILE = path.join(process.cwd(), 'data', 'stores', 'progress_update_publicgcreengolf_details.json'); // 진행 상태를 저장할 파일명
@@ -89,7 +89,7 @@ export async function scrapePublicgolfDetail(logInfo, logWarn, logError) {
 
     // 동시성 제한 설정
     const limit = pLimit(CONCURRENCY_LIMIT);
-    const mutex = new Mutex();
+    //const mutex = new Mutex();
 
     try {
         const tasks = storesToUpdate.map((store, index) => 
@@ -180,7 +180,7 @@ export async function scrapePublicgolfDetail(logInfo, logWarn, logError) {
  * @param {Function} logError - 오류 로그 함수
  * @returns {Object} - 추출된 주소와 룸 수
  */
-async function extractDetails(page, logInfo, logWarn, logError) {
+async function extractDetails(page, logInfo, logWarn) {
     let address = '주소 정보 없음';
     let rooms = '정보 없음';
 

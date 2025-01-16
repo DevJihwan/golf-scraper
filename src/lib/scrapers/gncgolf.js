@@ -30,7 +30,7 @@ function appendToJsonlFile(data) {
     fs.appendFileSync(OUTPUT_FILE, JSON.stringify(data) + '\n', 'utf-8');
 }
 
-async function retry(fn, retries = MAX_RETRIES, logInfo, logWarn, logError) {
+async function retry(fn, retries = MAX_RETRIES, logInfo, logWarn) {
     for (let attempt = 1; attempt <= retries; attempt++) {
         try {
             return await fn();

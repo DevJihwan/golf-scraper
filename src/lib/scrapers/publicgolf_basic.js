@@ -7,7 +7,7 @@ import os from 'os';
 import pLimit from 'p-limit';
 import { readProgress, saveProgress } from '../../utils/progressManager.js';
 import { getScraperStatus, setScraperStatus, resetScraper } from '../scraperController.js';
-import { Mutex } from 'async-mutex';
+//import { Mutex } from 'async-mutex';
 
 /**
  * 커스텀 에러 클래스 정의
@@ -41,15 +41,6 @@ export async function scrapePublicgolfBasic(logInfo, logWarn, logError) {
     const CONCURRENCY_LIMIT = 5; // 동시에 처리할 매장 수
     const MAX_PAGE = 1; // 최대 페이지 수 (필요에 따라 조정)
 
-    // 대한민국의 특별시, 광역시, 도 및 시군구 목록
-    const regions = [
-        {
-            province: '서울특별시',
-            districts: ['종로구', '중구', '용산구', '성동구', '광진구', '동대문구', '중랑구', '성북구', '강북구', '도봉구', '노원구', '은평구', '서대문구', '마포구', '양천구', '강서구', '구로구', '금천구', '영등포구', '동작구', '관악구', '서초구', '강남구', '송파구', '강동구']
-        },
-        // ... (다른 지역 목록 생략)
-    ];
-
     // sleep 함수 추가
     const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -75,7 +66,7 @@ export async function scrapePublicgolfBasic(logInfo, logWarn, logError) {
 
     // 동시성 제한 설정
     const limit = pLimit(CONCURRENCY_LIMIT);
-    const mutex = new Mutex();
+    //const mutex = new Mutex();
 
     // 브라우저 인스턴스 생성
     const browser = await puppeteer.launch({
@@ -248,7 +239,7 @@ export async function scrapePublicgolfBasic(logInfo, logWarn, logError) {
  * @param {Function} logError - 오류 로그 함수
  * @returns {Object} - 추출된 주소와 룸 수
  */
-async function extractDetails(page, logInfo, logWarn, logError) {
+async function extractDetails(page, logInfo, logWarn) {
     let address = '주소 정보 없음';
     let rooms = '정보 없음';
 

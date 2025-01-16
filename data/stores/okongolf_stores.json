@@ -306,5 +306,40 @@
     "phoneNumber": "031-295-1432",
     "address": "경기 화성시 봉담읍 삼천병마로 998-9 ..",
     "roomCount": 11
+  },
+  {
+    "number": 272,
+    "storeName": "더반골프",
+    "phoneNumber": "010-6684-0546",
+    "address": "서울 서대문구 충정로2가 5-14B1_지하1..",
+    "roomCount": 2
+  },
+  {
+    "number": 271,
+    "storeName": "하늘골프연습장(수원)",
+    "phoneNumber": "010-8940-8105",
+    "address": "경기 수원시 권선구 금곡로 106 (금곡..",
+    "roomCount": 12
+  },
+  {
+    "number": 270,
+    "storeName": "유디알멤버스 앤앤골프(의정부)",
+    "phoneNumber": "010-5531-1388",
+    "address": "경기 의정부시 바대논길 117 (고산동)A..",
+    "roomCount": 18
+  },
+  {
+    "number": 269,
+    "storeName": "수지골프클럽",
+    "phoneNumber": "010-5525-8777",
+    "address": "경기 용인시 수지구 상현로 5 (상현동,..",
+    "roomCount": 1
+  },
+  {
+    "number": 268,
+    "storeName": "중앙여자중학교",
+    "phoneNumber": null,
+    "address": "서울 서대문구 북아현로11가길 7 (북아..",
+    "roomCount": 1
   }
 ]

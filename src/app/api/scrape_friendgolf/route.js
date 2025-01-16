@@ -1,10 +1,21 @@
 // src/app/api/scrape_friendgolf/route.js
 import { scrapeFriendgolf } from '../../../lib/scrapers/friendgolf.js';
 
-export async function GET(request) {
+export async function GET() {
+    // 로그 함수 정의
+    const logInfo = (message) => {
+        console.log(`INFO: ${message}`);
+    };
+    const logWarn = (message) => {
+        console.warn(`WARN: ${message}`);
+    };
+    const logError = (message) => {
+        console.error(`ERROR: ${message}`);
+    };
+
     try {
-        const { allShops } = await scrapeFriendgolf();
-        return new Response(JSON.stringify({ data: allShops }), {
+        await scrapeFriendgolf(logInfo, logWarn, logError);
+        return new Response(JSON.stringify({ message: 'FriendGolf 스크래핑이 완료되었습니다.' }), {
             status: 200,
             headers: {
                 'Content-Type': 'application/json',

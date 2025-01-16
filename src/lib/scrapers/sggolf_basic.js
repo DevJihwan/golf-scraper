@@ -5,10 +5,10 @@ import fs from 'fs-extra';
 import path from 'path';
 import pLimit from 'p-limit';
 import os from 'os';
-import { logInfo, logError, logWarn } from '../../utils/logger.js';
+//import { logInfo, logError, logWarn } from '../../utils/logger.js';
 import { readProgress, saveProgress } from '../../utils/progressManager.js';
 import { getScraperStatus, setScraperStatus, resetScraper } from '../scraperController.js';
-import { Mutex } from 'async-mutex';
+//import { Mutex } from 'async-mutex';
 
 /**
  * 커스텀 에러 클래스 정의
@@ -38,65 +38,6 @@ async function retry(fn, retries = 3) {
     }
 }
 
-/**
- * 룸수 추출 함수
- * @param {string} imgSrc - 이미지 소스 URL
- * @returns {number|null} - 룸 수 또는 null
- */
-function extractRoomCount(imgSrc) {
-    const regex = /new_icon2_(\d+)\.gif$/;
-    const match = imgSrc.match(regex);
-    if (match && match[1]) {
-        return parseInt(match[1], 10);
-    }
-    return null;
-}
-
-/**
- * 전화번호 유효성 검사 함수
- * @param {string} phoneStr - 전화번호 문자열
- * @returns {boolean} - 유효 여부
- */
-function isValidPhoneNumber(phoneStr) {
-    // 전화번호가 없거나 "-"인 경우도 유효하게 처리
-    if (phoneStr === "-" || phoneStr === "") {
-        return true;
-    }
-    const regex = /^\d{2,3}-\d{3,4}-\d{4}$/;
-    return regex.test(phoneStr);
-}
-
-/**
- * number 필드 유효성 검사 함수
- * @param {number} number - 번호
- * @returns {boolean} - 유효 여부
- */
-function isValidNumber(number) {
-    // 입력값을 문자열로 변환
-    const numberStr = String(number);
-    // 숫자만 추출
-    const cleanedNumber = numberStr.replace(/\D/g, '');
-    const regex = /^\d+$/;
-    return regex.test(cleanedNumber);
-}
-
-/**
- * storeName 유효성 검사 함수
- * @param {string} nameStr - 상호명 문자열
- * @returns {boolean} - 유효 여부
- */
-function isValidStoreName(nameStr) {
-    return nameStr.length > 0;
-}
-
-/**
- * address 유효성 검사 함수
- * @param {string} addressStr - 주소 문자열
- * @returns {boolean} - 유효 여부
- */
-function isValidAddress(addressStr) {
-    return addressStr.length > 0;
-}
 /**
  * Scraper Function
  */
@@ -138,7 +79,7 @@ export async function scrapeSggolfBasic(logInfo, logWarn, logError) {
 
     // 동시성 제한 설정
     const limit = pLimit(CONCURRENCY_LIMIT);
-    const mutex = new Mutex();
+    //const mutex = new Mutex();
 
     // 브라우저 인스턴스 생성
     const browser = await puppeteer.launch({

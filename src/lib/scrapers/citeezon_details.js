@@ -8,6 +8,7 @@ import { readProgress, saveProgress } from '../../utils/progressManager.js';
 
 const DELAY_BETWEEN_REQUESTS = 1000; // 요청 사이의 대기 시간 (밀리초)
 
+/*
 // 중복 제거 함수 (매장명 기준)
 function removeDuplicates(stores) {
     const uniqueStores = [];
@@ -20,6 +21,7 @@ function removeDuplicates(stores) {
     }
     return uniqueStores;
 }
+    */
 
 export async function scrapeCiteezenDetails(stopSignal = () => false, logInfo, logWarn, logError) {
     const scraperName = 'citeezon_details'; // 정확히 'citeezon_details'로 설정

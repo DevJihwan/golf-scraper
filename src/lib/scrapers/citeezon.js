@@ -8,6 +8,7 @@ import { readProgress, saveProgress } from '../../utils/progressManager.js';
 
 const DELAY_BETWEEN_REQUESTS = 1000; // 요청 사이의 대기 시간 (밀리초)
 
+/*
 // 중복 제거 함수 (매장명 기준)
 function removeDuplicates(stores) {
     const uniqueStores = [];
@@ -20,6 +21,7 @@ function removeDuplicates(stores) {
     }
     return uniqueStores;
 }
+    */
 
 export async function scrapeCiteezen(stopSignal = () => false, logInfo, logWarn, logError) {
     const scraperName = 'citeezon';
@@ -58,7 +60,7 @@ export async function scrapeCiteezen(stopSignal = () => false, logInfo, logWarn,
     // 데이터 저장을 위한 배열 초기화 또는 파일에서 읽기
     let allStores = [];
     const OUTPUT_JSON = path.join(process.cwd(), 'data', 'stores', 'citeezon_stores.json');
-    const OUTPUT_EXCEL = path.join(process.cwd(), 'data', 'excel', 'citeezon.xlsx');
+    //const OUTPUT_EXCEL = path.join(process.cwd(), 'data', 'excel', 'citeezon.xlsx');
 
     if (await fs.pathExists(OUTPUT_JSON)) {
         try {
