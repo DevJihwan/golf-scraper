@@ -1,0 +1,310 @@
+[
+  {
+    "number": 272,
+    "storeName": "더반골프",
+    "phoneNumber": "010-6684-0546",
+    "address": "서울 서대문구 충정로2가 5-14B1_지하1..",
+    "roomCount": 2
+  },
+  {
+    "number": 271,
+    "storeName": "하늘골프연습장(수원)",
+    "phoneNumber": "010-8940-8105",
+    "address": "경기 수원시 권선구 금곡로 106 (금곡..",
+    "roomCount": 12
+  },
+  {
+    "number": 270,
+    "storeName": "유디알멤버스 앤앤골프(의정부)",
+    "phoneNumber": "010-5531-1388",
+    "address": "경기 의정부시 바대논길 117 (고산동)A..",
+    "roomCount": 18
+  },
+  {
+    "number": 269,
+    "storeName": "수지골프클럽",
+    "phoneNumber": "010-5525-8777",
+    "address": "경기 용인시 수지구 상현로 5 (상현동,..",
+    "roomCount": 1
+  },
+  {
+    "number": 268,
+    "storeName": "중앙여자중학교",
+    "phoneNumber": null,
+    "address": "서울 서대문구 북아현로11가길 7 (북아..",
+    "roomCount": 1
+  },
+  {
+    "number": 267,
+    "storeName": "시흥 파라다이스 인도어스크린",
+    "phoneNumber": "031-432-4432",
+    "address": "경기 시흥시 산기대학로 105 (정왕동, ..",
+    "roomCount": 11
+  },
+  {
+    "number": 266,
+    "storeName": "리더스 골프랜드 _ 순천",
+    "phoneNumber": "010-4192-0041",
+    "address": "전남 순천시 해룡면 상성길 260 (상삼..",
+    "roomCount": 2
+  },
+  {
+    "number": 265,
+    "storeName": "부여실내골프연습장",
+    "phoneNumber": "010-3247-9870",
+    "address": "충남 부여군 부여읍 성왕로 280-3 (쌍..",
+    "roomCount": 1
+  },
+  {
+    "number": 264,
+    "storeName": "영통 스크린골프",
+    "phoneNumber": "010-4798-0838",
+    "address": "경기 수원시 영통구 청명남로 40 (영통..",
+    "roomCount": 7
+  },
+  {
+    "number": 263,
+    "storeName": "바르셀로나골프(창원)",
+    "phoneNumber": "055-286-0700",
+    "address": "경남 창원시 성산구 중앙대로 77 (중앙..",
+    "roomCount": 10
+  },
+  {
+    "number": 272,
+    "storeName": "더반골프",
+    "phoneNumber": "010-6684-0546",
+    "address": "서울 서대문구 충정로2가 5-14B1_지하1..",
+    "roomCount": 2
+  },
+  {
+    "number": 271,
+    "storeName": "하늘골프연습장(수원)",
+    "phoneNumber": "010-8940-8105",
+    "address": "경기 수원시 권선구 금곡로 106 (금곡..",
+    "roomCount": 12
+  },
+  {
+    "number": 270,
+    "storeName": "유디알멤버스 앤앤골프(의정부)",
+    "phoneNumber": "010-5531-1388",
+    "address": "경기 의정부시 바대논길 117 (고산동)A..",
+    "roomCount": 18
+  },
+  {
+    "number": 269,
+    "storeName": "수지골프클럽",
+    "phoneNumber": "010-5525-8777",
+    "address": "경기 용인시 수지구 상현로 5 (상현동,..",
+    "roomCount": 1
+  },
+  {
+    "number": 268,
+    "storeName": "중앙여자중학교",
+    "phoneNumber": null,
+    "address": "서울 서대문구 북아현로11가길 7 (북아..",
+    "roomCount": 1
+  },
+  {
+    "number": 267,
+    "storeName": "시흥 파라다이스 인도어스크린",
+    "phoneNumber": "031-432-4432",
+    "address": "경기 시흥시 산기대학로 105 (정왕동, ..",
+    "roomCount": 11
+  },
+  {
+    "number": 266,
+    "storeName": "리더스 골프랜드 _ 순천",
+    "phoneNumber": "010-4192-0041",
+    "address": "전남 순천시 해룡면 상성길 260 (상삼..",
+    "roomCount": 2
+  },
+  {
+    "number": 265,
+    "storeName": "부여실내골프연습장",
+    "phoneNumber": "010-3247-9870",
+    "address": "충남 부여군 부여읍 성왕로 280-3 (쌍..",
+    "roomCount": 1
+  },
+  {
+    "number": 264,
+    "storeName": "영통 스크린골프",
+    "phoneNumber": "010-4798-0838",
+    "address": "경기 수원시 영통구 청명남로 40 (영통..",
+    "roomCount": 7
+  },
+  {
+    "number": 263,
+    "storeName": "바르셀로나골프(창원)",
+    "phoneNumber": "055-286-0700",
+    "address": "경남 창원시 성산구 중앙대로 77 (중앙..",
+    "roomCount": 10
+  },
+  {
+    "number": 262,
+    "storeName": "바이스앤 (의정부)",
+    "phoneNumber": "010-9462-1229",
+    "address": "경기 의정부시 오목로205번길 67 (민락..",
+    "roomCount": 2
+  },
+  {
+    "number": 261,
+    "storeName": "더라운지현대골프연습장",
+    "phoneNumber": "010-4628-1799",
+    "address": "충남 당진시 송악읍 북부산업로 1087 (..",
+    "roomCount": 4
+  },
+  {
+    "number": 260,
+    "storeName": "영통UDR아카데미",
+    "phoneNumber": "031-202-0818",
+    "address": "경기 수원시 영통구 청명남로 40 (영통..",
+    "roomCount": 11
+  },
+  {
+    "number": 259,
+    "storeName": "내포 골든골프 아카데미",
+    "phoneNumber": "010-5572-1698",
+    "address": "충남 홍성군 홍북읍 의향로 283 (신경..",
+    "roomCount": 11
+  },
+  {
+    "number": 258,
+    "storeName": "오케이온골프영주점",
+    "phoneNumber": "054-635-7700",
+    "address": "경북 영주시 구성로 282 (휴천동)2층",
+    "roomCount": 1
+  },
+  {
+    "number": 257,
+    "storeName": "골프상담소(청주)",
+    "phoneNumber": null,
+    "address": "충북 청주시 흥덕구 석곡동 3182층",
+    "roomCount": 3
+  },
+  {
+    "number": 256,
+    "storeName": "유디알멤버스양주옥정점",
+    "phoneNumber": "010-5838-0798",
+    "address": "경기 양주시 옥정동로7길 91 (옥정동)k..",
+    "roomCount": 17
+  },
+  {
+    "number": 255,
+    "storeName": "라이언앳",
+    "phoneNumber": "010-7367-2027",
+    "address": "서울 강남구 언주로113길 7 (논현동, ..",
+    "roomCount": 4
+  },
+  {
+    "number": 254,
+    "storeName": "수지구청역힐스테이트아파트",
+    "phoneNumber": null,
+    "address": "경기 용인시 수지구 포은대로 388 (풍..",
+    "roomCount": 5
+  },
+  {
+    "number": 253,
+    "storeName": "유디알멤버스 김포고페르점",
+    "phoneNumber": "031-987-0792",
+    "address": "경기 김포시 통진읍 도사리 736-1유디..",
+    "roomCount": 7
+  },
+  {
+    "number": 252,
+    "storeName": "유디알멤버스 분당테크노점",
+    "phoneNumber": "010-7749-0798",
+    "address": "경기 성남시 분당구 판교로 700 (야탑..",
+    "roomCount": 13
+  },
+  {
+    "number": 251,
+    "storeName": "더 파티 제주(진성)",
+    "phoneNumber": null,
+    "address": "서울 성동구 성수이로 51 (성수동2가, ..",
+    "roomCount": 1
+  },
+  {
+    "number": 250,
+    "storeName": "드래곤 스포츠 클럽",
+    "phoneNumber": null,
+    "address": "경기 화성시 봉담읍 상리 474-1475-16,..",
+    "roomCount": 1
+  },
+  {
+    "number": 249,
+    "storeName": "은성골프상사",
+    "phoneNumber": null,
+    "address": "광주 북구 중외길17번길 6 (매곡동).",
+    "roomCount": 1
+  },
+  {
+    "number": 248,
+    "storeName": "청담히릿_유디알멤버스",
+    "phoneNumber": "02-511-2779",
+    "address": "서울 강남구 선릉로 718 (청담동, 화일..",
+    "roomCount": 7
+  },
+  {
+    "number": 247,
+    "storeName": "유디알멤버스 천안불당점",
+    "phoneNumber": "010-7675-0798",
+    "address": "충남 천안시 서북구 불당25로 244 (불..",
+    "roomCount": 16
+  },
+  {
+    "number": 246,
+    "storeName": "유디알멤버스 올림픽감일",
+    "phoneNumber": "010-7149-0753",
+    "address": "경기 하남시 감일남로 56 (감일동)2층,..",
+    "roomCount": 18
+  },
+  {
+    "number": 245,
+    "storeName": "유디알멤버스 인천계양",
+    "phoneNumber": null,
+    "address": "인천 계양구 벌말로 582 (상야동)3층",
+    "roomCount": 16
+  },
+  {
+    "number": 244,
+    "storeName": "폴앤풀 (해운대)",
+    "phoneNumber": null,
+    "address": "부산 해운대구 해운대해변로 321 (중동..",
+    "roomCount": 1
+  },
+  {
+    "number": 243,
+    "storeName": "타워팰리스 (진성)",
+    "phoneNumber": "02-2212-8712",
+    "address": "서울 성동구 성수이로 51 (성수동2가, ..",
+    "roomCount": 1
+  },
+  {
+    "number": 242,
+    "storeName": "유디알멤버스 더퍼스트 청담",
+    "phoneNumber": "02-3444-0798",
+    "address": "서울 강남구 영동대로 647 (삼성동, 청..",
+    "roomCount": 11
+  },
+  {
+    "number": 241,
+    "storeName": "주식회사 서넥스",
+    "phoneNumber": "010-3404-0489",
+    "address": "대전 대덕구 중리서로 83 (중리동)럭키..",
+    "roomCount": 1
+  },
+  {
+    "number": 239,
+    "storeName": "인도어TV 유성골프(화성)",
+    "phoneNumber": "031-295-1432",
+    "address": "경기 화성시 봉담읍 삼천병마로 998-9 ..",
+    "roomCount": 9
+  },
+  {
+    "number": 238,
+    "storeName": "유디알멤버스 유성골프(화성)",
+    "phoneNumber": "031-295-1432",
+    "address": "경기 화성시 봉담읍 삼천병마로 998-9 ..",
+    "roomCount": 11
+  }
+]
