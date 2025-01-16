@@ -17,15 +17,15 @@ interface Scraper {
 const scrapers: Scraper[] = [
   { id: 'scrape_golfzone', name: 'GolfZone' },
   { id: 'scrape_fieldzone', name: 'FieldZone' },
-  { id: 'scrape_friendgolf', name: 'FriendGolf' }, // FriendGolf 스크래퍼 추가
-  { id: 'scrape_friendgolf_details', name: 'FriendGolf Details' }, // FriendGolf Details 스크래퍼 추가
-  { id: 'scrape_gncgolf', name: 'GncGolf' }, // GncGolf 스크래퍼 추가
-  { id: 'scrape_okongolf_store', name: 'Okongolf' }, // Okongolf 스크래퍼 추가
-  { id: 'scrape_publicgcreengolf_store', name: 'Publicgolf Basic' }, // Publicgolf Basic 스크래퍼 추가
-  { id: 'scrape_publicgcreengolf_details', name: 'Publicgolf Detail' }, // Publicgolf Detail 스크래퍼 추가
-  { id: 'scrape_sggolf_basic', name: 'Sggolf Basic' }, // Sggolf Basic 스크래퍼 추가
-  { id: 'scrape_sggolf_detail', name: 'Sggolf Detail' }, 
-  { id: 'scrape_thekgolf_basic', name: 'TheKgolf Basic' }, // TheKgolf
+  { id: 'scrape_friendgolf', name: 'FriendGolf' },
+  { id: 'scrape_friendgolf_details', name: 'FriendGolf Details' },
+  { id: 'scrape_gncgolf', name: 'GncGolf' },
+  { id: 'scrape_okongolf_store', name: 'Okongolf' },
+  { id: 'scrape_publicgcreengolf_store', name: 'Publicgolf Basic' },
+  { id: 'scrape_publicgcreengolf_details', name: 'Publicgolf Detail' },
+  { id: 'scrape_sggolf_basic', name: 'Sggolf Basic' },
+  { id: 'scrape_sggolf_detail', name: 'Sggolf Detail' },
+  { id: 'scrape_thekgolf_basic', name: 'TheKgolf Basic' },
   { id: 'scrape_citeezen', name: 'Citeezen' },
   { id: 'scrape_citeezen_detail', name: 'Citeezen Detail' }
 ];
@@ -62,7 +62,7 @@ export default function Home() {
       console.log('Message:', event.data);
     };
 
-    eventSource.addEventListener('log', (event) => {
+    eventSource.addEventListener('log', (event: MessageEvent) => {
       const data = JSON.parse(event.data);
       const { level, message } = data;
       const logMessage = `${level}: ${message}`;
@@ -72,7 +72,7 @@ export default function Home() {
       }));
     });
 
-    eventSource.addEventListener('end', (event) => {
+    eventSource.addEventListener('end', (event: MessageEvent) => {
       const data = JSON.parse(event.data);
       const { message } = data;
       const logMessage = `INFO: ${message}`;
@@ -84,7 +84,7 @@ export default function Home() {
       delete eventSourceRef.current[scraperId];
     });
 
-    eventSource.addEventListener('stop', (event) => {
+    eventSource.addEventListener('stop', (event: MessageEvent) => {
       const data = JSON.parse(event.data);
       const { message } = data;
       const logMessage = `INFO: ${message}`;
@@ -96,10 +96,9 @@ export default function Home() {
       delete eventSourceRef.current[scraperId];
     });
 
-    eventSource.addEventListener('error', (event) => {
-      const data = JSON.parse(event.data);
-      const { message } = data;
-      const logMessage = `ERROR: ${message}`;
+    // 수정된 'error' 이벤트 핸들러
+    eventSource.addEventListener('error', () => {
+      const logMessage = `ERROR: SSE connection encountered an error.`;
       setScraperStates(prev => ({
         ...prev,
         [scraperId]: { ...prev[scraperId], loading: false, logs: [...prev[scraperId].logs, logMessage] },
