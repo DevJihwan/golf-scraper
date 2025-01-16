@@ -1,6 +1,6 @@
 // src/app/api/scrape_thekgolf_basic/route.js
 
-import { scrapeTheKgolfBasic } from '../../../lib/scrapers/thekgolf.js';
+import { scrapeTheKgolf } from '../../../lib/scrapers/thekgolf.js';
 import { resetScraper } from '../../../lib/scraperController.js';
 
 export async function GET(request) {
@@ -29,7 +29,7 @@ export async function GET(request) {
             };
 
             try {
-                await scrapeTheKgolfBasic(logInfo, logWarn, logError);
+                await scrapeTheKgolf(logInfo, logWarn, logError);
                 // 스크래핑 완료 이벤트 전송
                 const endData = `event: end\ndata: ${JSON.stringify({ message: '스크래핑 완료' })}\n\n`;
                 controller.enqueue(encoder.encode(endData));
