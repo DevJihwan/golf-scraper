@@ -2,7 +2,7 @@
 import axios from 'axios';
 import fs from 'fs-extra';
 import path from 'path';
-import cheerio from 'cheerio';
+import { load } from 'cheerio';
 import { readProgress, saveProgress } from '../../utils/progressManager.js';
 import { getScraperStatus, setScraperStatus, resetScraper } from '../scraperController.js';
 
@@ -112,7 +112,7 @@ export async function scrapeFriendgolfDetails(logInfo, logWarn, logError) {
                     const shopDetailHtml = response.data.shopDetail;
 
                     // cheerio로 HTML 파싱
-                    const $ = cheerio.load(shopDetailHtml);
+                    const $ = load(shopDetailHtml);
 
                     // 센서 정보 추출
                     const sensors = [];

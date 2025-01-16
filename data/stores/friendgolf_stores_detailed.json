@@ -1,0 +1,86 @@
+[
+  {
+    "name": "판교PDC스포츠센터                    \n                                                                        T2",
+    "address": "경기도 성남시 분당구 판교로 242(삼평동 624) 2층",
+    "tel": "031-8060-0377",
+    "shopId": "4228",
+    "sensors": [
+      {
+        "sensorName": "Quantum",
+        "sensorCount": "0대"
+      },
+      {
+        "sensorName": "티업비전1,2",
+        "sensorCount": "1대"
+      },
+      {
+        "sensorName": "FA",
+        "sensorCount": "0대"
+      },
+      {
+        "sensorName": "지스윙멀티",
+        "sensorCount": "0대"
+      },
+      {
+        "sensorName": "지스윙프로",
+        "sensorCount": "0대"
+      }
+    ]
+  },
+  {
+    "name": "프렌즈 아카데미 판교점                    \n                                                FA",
+    "address": "경기도 성남시 분당구 판교역로 233-1(삼평동 680-1) H스퀘어 N동 지하1층",
+    "tel": "031-778-6806",
+    "shopId": "1122",
+    "sensors": [
+      {
+        "sensorName": "Quantum",
+        "sensorCount": "0대"
+      },
+      {
+        "sensorName": "티업비전1,2",
+        "sensorCount": "0대"
+      },
+      {
+        "sensorName": "FA",
+        "sensorCount": "13대"
+      },
+      {
+        "sensorName": "지스윙멀티",
+        "sensorCount": "0대"
+      },
+      {
+        "sensorName": "지스윙프로",
+        "sensorCount": "0대"
+      }
+    ]
+  },
+  {
+    "name": "프렌즈 스크린 판교                    \n                        Q                                                T2",
+    "address": "경기도 성남시 분당구 판교역로 235(삼평동 681) H스퀘어 N동 지하1층",
+    "tel": "031-778-6806",
+    "shopId": "4269",
+    "sensors": [
+      {
+        "sensorName": "Quantum",
+        "sensorCount": "9대"
+      },
+      {
+        "sensorName": "티업비전1,2",
+        "sensorCount": "1대"
+      },
+      {
+        "sensorName": "FA",
+        "sensorCount": "0대"
+      },
+      {
+        "sensorName": "지스윙멀티",
+        "sensorCount": "0대"
+      },
+      {
+        "sensorName": "지스윙프로",
+        "sensorCount": "0대"
+      }
+    ]
+  }
+]
